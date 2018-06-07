@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		for (int row=0;row<5;row++)
+		{
+			drawRow(row);
+			
+		}	
+				
+		for (int row=3;row>=0;row--)
+		{
+			drawRow(row);
+			
+		}	
+	}
+
+	
+	public static void drawRow(int row)
+	{
+		for (int col=0; col<row*2+1; col++)
+		{
+			Console.Write("*");
+		}
+
+		Console.WriteLine();		
+	}
+}
